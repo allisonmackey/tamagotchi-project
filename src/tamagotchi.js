@@ -26,9 +26,11 @@ export class Animal {
   }
 
   sleep(){
-   this.rest ++
+   if (this.rest < 21) {
+    this.rest ++
+   }
   }
-  
+
 }
 
 // Attention decreases every 10 seconds (10,000) 
