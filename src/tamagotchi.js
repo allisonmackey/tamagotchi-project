@@ -11,7 +11,10 @@ export class Animal {
   timedDecrease() {
     setInterval(() => {
       this.hunger --;
-    }, 20000)
+    }, 20000);
+    setInterval(() => {
+      this.rest --;
+    }, 30000);
   }
 }
 
