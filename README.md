@@ -26,10 +26,10 @@ _This application will create a tamagotchi and allow the user to give it attenti
 
 |   Behavior Description        |  
 |-------------------------------|
-| 1. Create animal object w/ properties of : hunger, attention & rest []|
-| 2. Create a method that checks on the hunger status of the animal object  []|
-| 3. Create a method that checks on the attention status of the animal object []|
-| 4. Create a method that checks on the rest status of the animal object []|
+| 1. Create animal object w/ properties of : hunger, attention & rest [X]|
+| 2. Create a method that checks on the hunger status of the animal object  [X]|
+| 3. Create a method that checks on the attention status of the animal object [X]|
+| 4. Create a method that checks on the rest status of the animal object [X]|
 | 5. Create a set interval method for hunger property to decrease over time []|
 | 6. Create a set interval method for attention property to decrease over time []|
 | 7. Create a set interval method for rest property to decrease over time []|
