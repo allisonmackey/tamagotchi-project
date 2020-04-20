@@ -59,4 +59,15 @@ describe("Animal", () => {
     expect(animal2.rest).toEqual(21);
   })
 
+  test("should verify that the love method increses the attention property of animial object", () => {
+    animal1.love();
+    expect(animal1.attention).toEqual(11);
+  })
+
+  test("should verify that the rest property cannot be increased above 21 using the sleep method", () => {
+    let animal2 = new Animal(21, 21, 21)
+    animal2.love();
+    expect(animal2.attention).toEqual(21);
+  })
+
 })
