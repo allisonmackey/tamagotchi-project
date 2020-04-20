@@ -31,6 +31,12 @@ export class Animal {
    }
   }
 
+  love(){
+    if (this.attention < 21) {
+     this.attention ++
+    }
+   }
+
 }
 
 // Attention decreases every 10 seconds (10,000) 
