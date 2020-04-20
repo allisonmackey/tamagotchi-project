@@ -53,4 +53,10 @@ describe("Animal", () => {
     expect(animal1.rest).toEqual(11);
   })
 
+  test("should verify that the rest property cannot be increased above 21 using the sleep method", () => {
+    let animal2 = new Animal(21, 21, 21)
+    animal2.sleep();
+    expect(animal2.rest).toEqual(21);
+  })
+
 })
