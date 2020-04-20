@@ -1,18 +1,18 @@
-import {Animal} from './../src/tamagotchi.js'
+import { Animal } from './../src/tamagotchi.js'
 
 describe("Animal", () => {
   jest.useFakeTimers();
   let animal1;
 
-  beforeEach(function() {
+  beforeEach(function () {
     animal1 = new Animal(10, 10, 10)
     animal1.timedDecrease();
   })
 
   test("should verify that the Animal constuctor is createing an object with the properties hunger, rest, and attention", () => {
-    expect(typeof(animal1.hunger)).toEqual("number");
-    expect(typeof(animal1.rest)).toEqual("number");
-    expect(typeof(animal1.attention)).toEqual("number");
+    expect(typeof (animal1.hunger)).toEqual("number");
+    expect(typeof (animal1.rest)).toEqual("number");
+    expect(typeof (animal1.attention)).toEqual("number");
   })
 
   test("creates a method that checks on the status of the animal object", () => {
@@ -24,7 +24,7 @@ describe("Animal", () => {
 
   test("should verify that our timedDecrease method decreases the hunger property as expected", () => {
     jest.advanceTimersByTime(20001)
-    expect(animal1.hunger).toEqual(9)    
+    expect(animal1.hunger).toEqual(9)
   })
 
   test("should verify that our timedDecrease method decreases the rest property as expected", () => {
@@ -68,6 +68,23 @@ describe("Animal", () => {
     let animal2 = new Animal(21, 21, 21)
     animal2.love();
     expect(animal2.attention).toEqual(21);
+  })
+
+  test("should verify that statusCheck method will check on levels every 10 seconds and return a string if levels are < 3", () => {
+    let animal2 = new Animal(2, 2, 2)
+    animal2.statusCheck();
+    expect(animal2.hungerStatus).toEqual("Your animal is hungry!!");
+    expect(animal2.restStatus).toEqual("Your animal is tired!!");
+    expect(animal2.attentionStatus).toEqual("Your animal is needy!!");
+  })
+
+  test("should verify that statusCheck method will work as before, but show death instead of a warning when any attribute is 0 or below", () => {
+    let animal2 = new Animal(0, 0, 0)
+    animal2.statusCheck();
+    expect(animal2.attentionStatus).toEqual("Your animal is dead!!");
+    expect(animal2.restStatus).toEqual("Your animal is dead!!");
+    expect(animal2.hungerStatus).toEqual("Your animal is dead!!");
+  
   })
 
 })
