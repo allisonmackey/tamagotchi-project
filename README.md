@@ -30,9 +30,9 @@ _This application will create a tamagotchi and allow the user to give it attenti
 | 2. Create a method that checks on the hunger status of the animal object  [X]|
 | 3. Create a method that checks on the attention status of the animal object [X]|
 | 4. Create a method that checks on the rest status of the animal object [X]|
-| 5. Create a set interval method for hunger property to decrease over time []|
-| 6. Create a set interval method for attention property to decrease over time []|
-| 7. Create a set interval method for rest property to decrease over time []|
+| 5. Create a set interval method for hunger property to decrease over time [X]|
+| 6. Create a set interval method for attention property to decrease over time [X]|
+| 7. Create a set interval method for rest property to decrease over time [X]|
 | 8. Create a method for hunger property to increase []|
 | 9. Create a method for attention property to increase []
 | 10. Create a method for rest property to increase []

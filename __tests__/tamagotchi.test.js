@@ -33,8 +33,19 @@ describe("Animal", () => {
   })
 
   test("should verify that our timedDecrease method decreases the attention property as expected", () => {
-    jest.advanceTimersByTime(30001);
+    jest.advanceTimersByTime(10001);
     expect(animal1.attention).toEqual(9);
+  })
+
+  test("should verify that the feed method increses the hunger property of animial object", () => {
+    animal1.feed();
+    expect(animal1.hunger).toEqual(11);
+  })
+
+  test("should verify that the hunger property cannot be increased above 21 using the feed method", () => {
+    let animal2 = new Animal(21, 21, 21)
+    animal2.feed();
+    expect(animal2.hunger).toEqual(21);
   })
 
 })
