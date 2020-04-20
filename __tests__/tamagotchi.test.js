@@ -48,4 +48,9 @@ describe("Animal", () => {
     expect(animal2.hunger).toEqual(21);
   })
 
+  test("should verify that the sleep method increses the rest property of animial object", () => {
+    animal1.sleep();
+    expect(animal1.rest).toEqual(11);
+  })
+
 })
