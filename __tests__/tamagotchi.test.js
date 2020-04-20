@@ -24,7 +24,11 @@ describe("Animal", () => {
 
   test("should verify that our timedDecrease method decreases the hunger property as expected", () => {
     jest.advanceTimersByTime(20001)
-    expect(animal1.hunger).toEqual(9)
-    
+    expect(animal1.hunger).toEqual(9)    
+  })
+
+  test("should verify that our timedDecrease method decreases the rest property as expected", () => {
+    jest.advanceTimersByTime(30001);
+    expect(animal1.rest).toEqual(9);
   })
 })
