@@ -1,12 +1,12 @@
-# _APPNAME HERE_
+# _Tamagotchi App_
 
-#### _A practice application using node, jQuery & JavaScript to display my knowledge of ....INSERT INFO HERE. DATE HERE_
+#### _A practice application using node, jQuery & JavaScript to display our knowledge of setInterval() & setTimeout(). 4.20.2020_
 
-#### By _**Allison Mackey**_
+#### By _**Allison Mackey & Reid Ashwill**_
 
 ## Description
 
-_This application will....._ 
+_This application will create a tamagotchi and allow the user to give it attention, food and rest in order for it to survive._ 
 
 ## Setup/Installation Requirements
 
@@ -26,16 +26,17 @@ _This application will....._
 
 |   Behavior Description        |  
 |-------------------------------|
-| 1.  []|
-| 2.  []|
-| 3.  []|
-| 4.  []|
-| 5.  []|
-| 6.  []|
-| 7.  []|
-| 8.  []|
-| 9.  []|
-| 10. []|
+| 1. Create animal object w/ properties of : hunger, attention & rest []|
+| 2. Create a method that checks on the hunger status of the animal object  []|
+| 3. Create a method that checks on the attention status of the animal object []|
+| 4. Create a method that checks on the rest status of the animal object []|
+| 5. Create a set interval method for hunger property to decrease over time []|
+| 6. Create a set interval method for attention property to decrease over time []|
+| 7. Create a set interval method for rest property to decrease over time []|
+| 8. Create a method for hunger property to increase []|
+| 9. Create a method for attention property to increase []
+| 10. Create a method for rest property to increase []
+| 11. Modify the check in method to check dangerously low levels or death []|
 
 ## Known Bugs
 
@@ -43,7 +44,7 @@ _No known bugs at this time_
 
 ## Support and contact details
 
-_If you have any questions or any issues please feel free to submit an issue here: https://github.com/amackey693/INSERTGITHUBREPOHERE/issues_
+_If you have any questions or any issues please feel free to submit an issue here: https://github.com/amackey693/tamagotchi-project/issues_
 
 ## Technologies Used
 
@@ -53,4 +54,4 @@ _Node, Jest, jQuery, & JavaScript_
 ### License
 *MIT LICENSE*
 
-Copyright (c) 2020 **_Allison Mackey, Epicodus_**
+Copyright (c) 2020 **_Allison Mackey & Reid Ashwill, Epicodus_**

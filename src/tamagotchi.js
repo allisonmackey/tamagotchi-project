@@ -4,6 +4,6 @@ export class Animal {
     this.hunger = hunger;
     this.rest = rest;
     this.attention = attention;
-
   }  
+
 }
