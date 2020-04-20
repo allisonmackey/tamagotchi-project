@@ -5,5 +5,7 @@ export class Animal {
     this.rest = rest;
     this.attention = attention;
   }  
-
+  statusCheck() {
+    return this; 
+  }
 }
