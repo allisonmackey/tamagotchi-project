@@ -31,4 +31,10 @@ describe("Animal", () => {
     jest.advanceTimersByTime(30001);
     expect(animal1.rest).toEqual(9);
   })
+
+  test("should verify that our timedDecrease method decreases the attention property as expected", () => {
+    jest.advanceTimersByTime(30001);
+    expect(animal1.attention).toEqual(9);
+  })
+
 })
